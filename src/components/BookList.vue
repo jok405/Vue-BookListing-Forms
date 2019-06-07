@@ -10,7 +10,7 @@
       <option v-for="filter in filters">{{filter}}</option>
     </select>
     <ul class="exists">
-      <book-item v-for='book in filteredbooks' :key='book.id' :book='book'></book-item>
+      <book-item v-for='book in filteredBooks' :key='book.id' :book='book'></book-item>
     </ul>
     <br><hr>
     <book-form @addBook='appendBook'></book-form>
